@@ -1,0 +1,35 @@
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients__list {
+  @include centeredFlex($ai: null);
+}
+
+.clients__item + .clients__item {
+  margin-left: 30px;
+}
+
+.clients__link {
+  @include centeredFlex();
+
+  width: 170px;
+  height: 92px;
+
+  color: $link-main-color;
+  fill: $link-main-color;
+
+  box-sizing: inherit;
+  border: 1px solid $link-main-color;
+  border-radius: 4px;
+
+  transition: border 250ms $main-timing-function,
+    fill 250ms $main-timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-text-color;
+    fill: $accent-text-color;
+  }
+}

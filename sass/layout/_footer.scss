@@ -1,0 +1,32 @@
+.footer {
+  background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__flex {
+  @include centeredFlex($jc: null, $ai: baseline);
+}
+
+.footer__address {
+  margin-right: 70px;
+}
+
+.footer__logo--light {
+  color: $primary-white-color;
+}
+
+.address {
+  line-height: 1.71;
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.address__name {
+  margin-bottom: 9px;
+}
+
+.footer-auth__item:not(:last-child) {
+  margin-bottom: 9px;
+}

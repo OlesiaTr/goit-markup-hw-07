@@ -1,0 +1,28 @@
+.specialty {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.specialty__list {
+  display: flex;
+}
+
+.specialty__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.specialty__title {
+  @include font(700, null, 1.14, null);
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.specialty__description {
+  line-height: 1.71;
+}
